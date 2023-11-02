@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gran Savant banda de musica  Poprock">
+  <meta name="keywords" content=",musica ,poprock musica española,banda musical" />
+    
+    <title>Gran Savant Musica</title>
+    <link rel="icon" type="logoSmall.png" href="img/logoMusicaPequeño.png">
+    <script src="https://kit.fontawesome.com/2f91754908.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/cookies.css">
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/musica.css">
+</head>
+<body >
+    
+    <header>
+        <div class="redes">
+          <a href="https://www.instagram.com/gransavant/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC2G3CYQ95UKnOp8Pfc2jFZg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://open.spotify.com/intl-es/artist/1inDNPgRlU2KNjGKxnvxZr" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+        <button id="botonHamburguesa" onclick=" Menu();"> <i class="fa-solid  fa-bars"></i></button>
+        <nav id="navegador" class="">
+            <a href="index.html">INICIO</a>
+            <a class="seleccionado" href="musica.html">MÚSICA</a>
+            <a href="nosotros.html">SOBRE NOSOTROS</a>
+            <a href="galeria.html">GALERÍA</a>
+            <a href="conciertos.html">CONCIERTOS</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav> 
+    </header>
+    <div class="contenedorLogoTitulo">
+      <img src="img/grantSavantLogo-editado.png" alt="logo oficial" id="logoOficial"> 
+      <div class="descripcionLogo" id="descripcionLogo">
+            <p> El Águila Real Americana es el ave que posee mayor longevidad dentro de su especie, llega a vivir hasta 70 años. Pero para llegar a esa edad, en el ecuador de su vida tiene que tomar una seria y difícil decisión.</p>
+           
+            <p>A los 40 años sus uñas curvas y flexibles son tan largas que no consiguen agarrar a las presas de las cuales se alimenta, su pico alargado y puntiagudo comienza a curvarse apuntando contra el pecho peligrosamente y sus alas, envejecidas y pesadas por las gruesas plumas, hacen que volar sea una tarea muy complicada.</p>
+            <p>Es entonces cuando el águila tiene que tomar una decisión entre dos alternativas: dejarse morir o enfrentar un doloroso proceso de renovación que durará cerca de ciento cincuenta días.</p>
+
+            <p>Este proceso consiste en volar hacia lo alto de una montaña y refugiarse en un nido próximo a una pared, donde no necesite volar. Entonces, el águila ya refugiada comenzará a golpear su pico contra la pared hasta conseguir arrancarlo; una vez amputado tendrá que esperar a que nazca un nuevo pico con el cual, después, tendrá que arrancar sus viejas uñas.</p>
+
+            <p>Cuando las nuevas uñas comienzan a nacer, será el momento para desprenderse de sus viejas plumas arrancándoselas con su nuevo pico.</p>
+
+            <p>Después de cinco meses muy duros donde vuelve a tener un pico fuerte y joven, plumas brillantes y sedosas y uñas útiles, el águila real saldrá victorioso ejecutando su vuelo de renovación y a partir de entonces dispondrá de 30 años más de vida, los años más gloriosos.</p>
+            <p>A lo largo de nuestra vida nos suceden situaciones similares.
+            O tomas decisiones importantes en tu vida o mueres en el intento y por tanto te sientes paralizada, a la deriva, como si fueras un zombi, dejándote llevar por las circunstancias de la vida.</p>
+
+
+            <button id="botonCerrar"><i class="fa-solid fa-circle-xmark"></i></button>
+
+        </div>  
+      <h1 class="logoTitulo">GRAN SAVANT</h1>
+  </div>
+   
+          <h2 class="tituloMusica">Escucha el primer disco de Gran Savant <br><span>Imperpérrito Sentimiento</span></h2>
+          <main id="main">
+      
+          <div class="wrapper">
+   
+                  <div class="containerRepr">
+                  <div class="img-area" >
+                    <img src="" alt="">
+                  </div>
+                  <div class="song-details">
+                    <p class="name"></p>
+                    <p class="artist"></p>
+                  </div>
+                  <div class="progress-area">
+                    <div class="progress-bar">
+                      <audio id="main-audio" src=""></audio>
+                    </div>
+                    <div class="song-timer">
+                      <span class="current-time">0:00</span>
+                      <span class="max-duration">0:00</span>
+                    </div>
+                  </div>
+                  <div class="controls">
+                    <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                    <i id="prev" class="material-icons">skip_previous</i>
+                    <div class="play-pause">
+                      <i class="material-icons play">play_arrow</i>
+                    </div>
+                    <i id="next" class="material-icons">skip_next</i>
+                    <i id="more-music" class="material-icons">queue_music</i>
+                  </div>
+                   </div>
+                  <div class="music-list show">
+                    <div class="header">
+                      <div class="row">
+                       
+                        <span>Escúcha el álbum completo en Spotify </span>
+                         
+                      </div> 
+                      <a id="close" href="https://open.spotify.com/intl-es/artist/1inDNPgRlU2KNjGKxnvxZr" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                     
+                    </div>
+                    <ul>
+                      
+                    </ul>
+                   
+                      
+                    </div>
+                  </div>
+               
+                </div>
+
+ </main>
+ <footer>
+  <div class="contenedorFooter">
+      <div class="footerFlex">
+          <a class="whatsapp" href="https://wa.me/34673523675" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+
+          <a class="email" href="mailto:gransavant@gmail.com"><i class="fa-sharp fa-regular fa-envelope"></i> gransavant@gmail.com</a>
+          <a class="cookies" href="aviso-cookies.html" target="_blank">Política de Cookies</a>
+      </div>
+      
+      <div  class="footerFlex">
+      <a class="telefono" href="tel:+34673523675"><i class="fa-solid fa-phone-volume"></i> +34 673 523 675</a>
+      <p class="copy">&copy; 2023 <span>N9</span>  Web Developer</p>
+      <a  class="terminos" href="politicaPrivacidad.html" target="_blank">Política de Privacidad</a>
+      </div>
+      
+     
+  </div> 
+ 
+</footer>
+<div class="aviso-cookies" id="aviso-cookies">
+  <img class="galleta" src="img/cookie.svg" alt="Galleta">
+  <h3 class="titulo">Cookies</h3>
+  <p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+  <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+  <a class="enlace" href="aviso-cookies.html">Aviso de Cookies</a>
+</div>
+<div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+
+<script src="js/aviso-cookies.js"></script>
+
+<script src="js/music-list.js"></script>
+<script src="js/reproductor-musica.js"></script>
+<script src="js/main.js"></script> 
+</body>
+</html>

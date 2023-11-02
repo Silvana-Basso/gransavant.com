@@ -1,0 +1,326 @@
+root {
+  --fuentePrincipal: "PT Serif", serif;
+  --fuenteSecundaria: "Babylonica", cursive;
+  --colorContraste: #b92565;
+  --colorFondo: #171932;
+  --colorFuente: #fdf3cb;
+}
+html {
+  font-size: 62.5%;
+}
+*:focus {
+  outline: none;
+}
+body {
+  background-color: #171932;
+  color: #fdf3cb;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 8rem;
+  z-index: 9999;
+  background-color: #171932;
+}
+#botonHamburguesa {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #fdf3cb;
+  font-size: 30px;
+  padding-right: 4rem;
+}
+@media (min-width: 994px) {
+  #botonHamburguesa {
+    display: none;
+  }
+}
+#navegador {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 8rem;
+  width: 100%;
+  height: 0;
+  background-color: #171932;
+  text-align: center;
+  overflow: hidden;
+  transition: height.5s ease-out;
+  z-index: 9999;
+}
+@media (min-width: 994px) {
+  #navegador {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 72rem;
+    height: 8rem;
+    right: 1.6rem;
+    top: 0;
+  }
+}
+
+#navegador.desplegado {
+  height: 100%;
+}
+#navegador a {
+  text-decoration: none;
+  color: #fdf3cb;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 4.8rem;
+}
+@media (min-width: 994px) {
+  #navegador a {
+    padding-right: 1.6rem;
+    padding-top: 1.6rem;
+  }
+}
+#navegador a:hover {
+  color: #ef7f95;
+}
+
+#navegador .seleccionado {
+  color: #ef7f95;
+}
+
+h1.logoTitulo {
+  font-family: "Sancreek", cursive;
+  font-size: 4.48rem;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 0;
+  color: #b68d2c;
+  animation: titulo 3s;
+  text-shadow: 2.5px 2.5px 2.5px silver;
+}
+@media (min-width: 768px) {
+  h1.logoTitulo {
+    font-family: "Sancreek", cursive;
+    font-size: 11.2rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -4rem;
+
+    color: #b68d2c;
+    text-shadow: 2.5px 2.5px 2.5px silver;
+  }
+}
+
+.contenedorLogoTitulo img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 8rem;
+  position: relative;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .contenedorLogoTitulo img {
+    width: 30%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 994px) {
+  .contenedorLogoTitulo img {
+    width: 20%;
+  }
+}
+
+.descripcionLogo {
+  text-align: justify;
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background-color: #fdf3cb;
+  color: #171932;
+  z-index: 20000;
+  padding: 1rem;
+  border-radius: 15px;
+  overflow: auto;
+  display: none;
+}
+#botonCerrar {
+  display: block;
+  margin-left: 85%;
+  color: #171932;
+  font-size: 3.5rem;
+  border: none;
+  background-color: transparent;
+}
+@media (min-width: 994px) {
+  #botonCerrar {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .descripcionLogo {
+    width: 60%;
+    left: 30%;
+  }
+}
+@media (min-width: 994px) {
+  .descripcionLogo {
+    width: 60%;
+    top: 35%;
+    left: 20%;
+  }
+}
+.descripcionLogo.hover {
+  display: block;
+}
+
+@keyframes titulo {
+  0% {
+    transform: rotateX(30deg) translateX(300px) skewX(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+.redes {
+  margin-left: 2.4rem;
+}
+@media (min-width: 994px) {
+  .redes {
+    margin-top: 1.28rem;
+  }
+}
+.redes i,
+.contenidoVideo i {
+  color: #fdf3cb;
+  font-size: 30px;
+  padding: 12px;
+}
+.redes i:hover,
+.contenidoVideo i:hover {
+  color: #ef7f95;
+}
+
+.efecto {
+  width: 80%;
+  height: auto;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.efecto {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+footer .contenedorFooter {
+  line-height: 2.2;
+  border-top: solid 1px var(--colorFuente);
+  font-size: 1.45rem;
+  margin-top: 5rem;
+}
+.contenedorFooter .footerFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .contenedorFooter .footerFlex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.whatsapp,
+.email,
+.telefono,
+.copy,
+.cookies,
+.terminos {
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .whatsapp,
+  .email,
+  .telefono,
+  .copy,
+  .cookies,
+  .terminos {
+    width: 24rem;
+    margin: 0 0 1.6rem 0;
+    text-align: center;
+  }
+}
+.copy span {
+  font-weight: bold;
+  color: #ef7f95;
+}
+
+.whatsapp {
+  color: var(--colorFuente);
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+}
+
+.email,
+.telefono {
+  color: var(--colorFuente);
+  display: block;
+}
+.email:hover,
+.telefono:hover,
+.whatsapp:hover,
+.cookies:hover,
+.terminos:hover {
+  color: #ef7f95;
+}
+
+.copy {
+  color: var(--colorFuente);
+}
+
+.cookies,
+.terminos {
+  display: block;
+  text-decoration: none;
+  color: var(--colorFuente);
+}
+
+@media (min-width: 768px) {
+  .cookies,
+  .terminos {
+    text-align: left;
+  }
+}

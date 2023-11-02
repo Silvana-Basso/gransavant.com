@@ -1,0 +1,159 @@
+.proximosConciertos {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(239, 127, 149, 0.1);
+  border-radius: 15px;
+}
+
+.tituloConciertos {
+  text-align: center;
+  font-size: 4.8rem;
+  margin: 4.8rem 0;
+}
+.concierto {
+  display: grid;
+  grid-template-columns: 90%;
+  gap: 1rem;
+  border-bottom: solid 1px rgba(239, 127, 149, 0.5);
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.6rem;
+}
+
+@media (min-width: 994px) {
+  .concierto {
+    width: 80%;
+    padding: 1.6rem 8rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.concierto p {
+  text-align: center;
+}
+.concierto p:first-child {
+  font-weight: bold;
+}
+@media (min-width: 994px) {
+  .concierto p {
+    text-align: left;
+  }
+}
+.concierto:last-child {
+  border-bottom: none;
+}
+.sirocco {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+@media (min-width: 994px) {
+  .sirocco {
+    width: 80%;
+  }
+}
+.mobydick {
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 994px) {
+  .mobydick {
+    width: 80%;
+  }
+}
+.proximosConciertos {
+  width: 90%;
+  margin: 0 auto;
+}
+.tituloConciertos {
+  font-size: 3.2rem;
+}
+@media (min-width: 994px) {
+  .tituloConciertos {
+    font-size: 4.8rem;
+  }
+}
+.sirocco h2,
+.mobydick h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin: 0 0 4rem 0;
+}
+@media (min-width: 994px) {
+  .sirocco h2,
+  .mobydick h2 {
+    font-size: 4.8rem;
+    margin: 8rem 0;
+  }
+}
+
+.concierto p:first-child {
+  color: #b92565;
+}
+#videoSirocco iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-bottom: 0;
+  left: 0;
+  top: 0;
+}
+@media (min-width: 994px) {
+  #videoSirocco iframe {
+    height: 80%;
+  }
+}
+#videoMobydick iframe {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (min-width: 994px) {
+  #videoMobydick iframe {
+    height: 80%;
+    margin-bottom: 0;
+  }
+}
+#videoMobydick {
+  overflow: hidden;
+  padding-bottom: 40rem;
+  position: relative;
+  height: 0;
+  margin-bottom: 8rem;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 994px) {
+  #videoMobydick {
+    margin-bottom: 0;
+    width: 70%;
+  }
+}
+
+#videoSirocco {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 40rem;
+  position: relative;
+  height: 0;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+@media (min-width: 994px) {
+  #videoSirocco {
+    width: 70%;
+  }
+}
+.concierto a {
+  text-decoration: none;
+  color: var(--colorFuente);
+}
+.contenedorFooter {
+  margin-top: 0;
+}
